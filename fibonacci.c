@@ -10,7 +10,12 @@ int main()
         printf("Enter a positive number: ");
         scanf("%d",&n);
 
-
+        if(n<0)
+        {
+            printf("Invalid input. Please try again\n\n");
+            continue;
+        }
+        
         result=fibonacci(n);        //Calling recursive function
         printf("Output = %d\n",result);
     }
