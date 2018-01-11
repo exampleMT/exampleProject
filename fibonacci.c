@@ -1,34 +1,34 @@
 #include<stdio.h>
-
-int fibonacci(int num);
-
 int main()
 {
-    int n,result;
+    int i,j,k,l,m;
     while(1)
     {
         printf("Enter a positive number: ");
-        scanf("%d",&n);
+        scanf("%d",&i);
 
-        if(n<0)
+        l=0;
+        m=1;
+
+        if(i==0)
         {
-            printf("Invalid input. Please try again\n\n");
-            continue;
+            k=0;
         }
-        
-        result=fibonacci(n);        //Calling recursive function
-        printf("Output = %d\n",result);
+        else if(i==1)
+        {
+            k=1;
+        }
+        else
+        {
+            for(j=2;j<=i;j++)
+            {
+                k=l+m;
+                l=m;
+                m=k;
+            }
+        }
+        printf("Output = %d\n",k);
+
     }
-
-
     return 0;
-}
- int fibonacci(int num)
- {
-    if(num==0)
-        return 0;
-    else if(num==1)
-        return 1;
-    else
-        return fibonacci(num-1)+fibonacci(num-2);
 }
