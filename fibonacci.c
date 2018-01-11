@@ -1,4 +1,5 @@
 //Corrected variable names
+//Use recursion instead of loop
 
 #include<stdio.h>
 int main()
