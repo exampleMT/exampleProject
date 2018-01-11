@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main()
 {
+    //These variable names are confusing, They should be self explanatory.
     int i,j,k,l,m;
     while(1)
     {
